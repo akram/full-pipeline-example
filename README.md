@@ -45,7 +45,8 @@ oc label is maven35 role=jenkins-slave
 
 Instanciate jenkins-blue-ocean
 ```
-oc new-app jenkins-ephemeral -p NAMESPACE=jenkins-blue-ocean -p JENKINS_IMAGE_STREAM_TAG=jenkins-blueocean:latest 
+oc new-app jenkins-ephemeral 
+#-p NAMESPACE=jenkins-blue-ocean -p JENKINS_IMAGE_STREAM_TAG=jenkins-blueocean:latest 
 ```
 
 
