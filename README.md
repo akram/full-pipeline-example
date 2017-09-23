@@ -37,8 +37,8 @@ oc policy add-role-to-user system:image-puller system:serviceaccount:full-pipeli
 
 Tag images to use as custom-slave in Jenkins
 ```
-oc tag jenkins-custom-slaves/jenkins-slave-nodejs6 nodejs6:latest
-oc tag jenkins-custom-slaves/jenkins-slave-maven35 maven35:latest
+oc tag jenkins-custom-slaves/jenkins-slave-nodejs6:latest nodejs6:latest
+oc tag jenkins-custom-slaves/jenkins-slave-maven35:latest maven35:latest
 oc label is nodejs6 role=jenkins-slave
 oc label is maven35 role=jenkins-slave
 ```
